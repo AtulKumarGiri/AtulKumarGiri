@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.navbar{
+  padding: 0!important;
+  margin: 0 !important;
+}
+.navbar-brand{
+  margin: 0 !important;
+  padding: 0 !important;
+  filter: drop-shadow(1px 2px .5px #00000061 );
+}
+.navbar-brand span{
+  margin-left: -25px;
+  font-size: 23px;
+  font-weight: 600;
+  color: #b65596;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item a{
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0px 15px;
+  padding: 0;
+  color: rgb(169, 169, 169);
+
+}
+.nav-item:hover a, .nav-item:active a{
+  color: #673657;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-item button{
+  background: #673657;
+  font-weight: 600;
+  padding: 15px 30px;
+}
+.nav-item button:hover{
+  background: #770150;
+  
+}
+
+.footer{
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  padding: 15px 30px;
+  /* color: white; */
+}
+.up-foot img{
+  width: 30%;
+}
+.up-foot p{
+  font-size: larger;
+  margin-top: -25px!important;
+  margin-bottom: 0!important;
+}
+.up-foot span{
+  font-size: 14px;
+}
+.up-foot .design p{
+  margin-top: 0 !important;
+}
+.up-foot .design p span{
+  color: rgb(169, 169, 169);
+  font-weight: 100;
+  font-size: 15px;
+}
+
+@media (max-width:460px) {
+  ul.navbar-nav{
+    width: 100%;
+    position: relative;
+    background: black;
+    height: 100vh;
+    z-index: 11;
+    text-align: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .up-foot p{
+    font-size: 15px;
+    margin-top: 0 !important;
   }
-  to {
-    transform: rotate(360deg);
+  .up-foot .design p span{
+    font-size: 13px;
+  }
+  .social ul{
+    text-align: center !important;
+    padding: 0.5rem 2rem  !important;
   }
 }
