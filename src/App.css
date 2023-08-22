@@ -85,18 +85,12 @@
 
 
 /* ABOUT US SECTION  */
-.about-container, .services, .portfolio, .workExperience{
+.about-container, .services, .portfolio, .workExperience, .stayInTouch{
   width: 100%;
   height: 100vh;
 }
 
 /* STAY IN TOUCH SECTION  */
-.stayInTouch{
-  width: 100%;
-  height: 85vh !important;
-  position: relative;
-}
-
 .heading h1{
   font-size: 44px;
   font-family: 'Bricolage Grotesque', sans-serif;
