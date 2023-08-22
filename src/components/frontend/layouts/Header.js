@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useLayoutEffect } from "react";
 import {
 	Navbar,
 	NavItem,
@@ -9,14 +9,40 @@ import {
 	NavbarBrand,
     Button
 } from 'reactstrap';
+import Cursor from "react-cursor-follow";
 
 
-function Header() {
+const colors = [
+    "#ff0000",
+    "#ffa500",
+    "#ffff00",
+    "#008000",
+    "#0000ff",
+    "#4b0082",
+    "#ee82ee",
+  ];
 
-    const[isOpen, setIsOpen] =React.useState(false);
+function Header(props) {
+
+    const[isOpen, setIsOpen] = useState(false); //Humburger
+    const [i, setI] = useState(0); //Cursor Color
+
+
+    useLayoutEffect(() => {
+        setTimeout(() => {
+          if (i === colors.length) setI(0);
+          else setI(i + 1);
+        }, 100);
+      }, [i]);
+
+
+
+
 
 	return (
 		<div className="container" style={{display: 'block' }}>
+            <Cursor color={"rgba(255, 0, 0, 0.6)"} duration={1} size={55} />
+
 			<Navbar light expand="md" >
 			    <NavbarBrand href="/"><img src="./assets/images/website/logo.png" alt="#logo" width={90} />  <span>Atul Kumar Giri</span></NavbarBrand>
 				<NavbarToggler onClick={() => { setIsOpen(!isOpen) }} />

@@ -21,7 +21,7 @@ function Footer() {
                 </div>
                 <div className="social text-center">
                     <p className='mb-1'>Connect with me at</p>
-                    <ul className='d-flex align-items-center p-0 m-0'>
+                    <ul className='d-flex p-0 m-0'>
                         <li className='mx-1'><a href="mailto:atulgiri21dec@gmail.com" target="_blank" rel="noreferrer" className="btn btn-social-icon  btn-google"><i className="fa fa-google"></i></a></li>
                         <li className='mx-1'><a href="https://github.com/AtulKumarGiri" target="_blank" rel="noreferrer" className="btn btn-social-icon  btn-github"><i className="fa fa-github"></i></a></li>
                         <li className='mx-1'><a href="https://www.facebook.com/profile.php?id=100057191202899" target="_blank" rel="noreferrer" className="btn btn-social-icon  btn-facebook"><i className="fa fa-facebook"></i></a></li>
