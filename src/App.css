@@ -9,16 +9,21 @@
   padding: 0!important;
   margin: 0 !important;
 }
+
 .navbar-brand{
   margin: 0 !important;
   padding: 0 !important;
-  filter: drop-shadow(1px 2px .5px #00000061 );
+  filter: drop-shadow(1px 2px .5px #807e7e61 );
 }
+.navbar-collapse{
+  flex-grow: 0.5!important;
+}
+
 .navbar-brand span{
   margin-left: -25px;
   font-size: 23px;
   font-weight: 600;
-  color: #b65596;
+  color: #830057;
 }
 
 .nav-item a{
@@ -33,7 +38,7 @@
   color: #673657;
 }
 
-.nav-item button{
+.navbar-collapse button{
   background: #673657;
   font-weight: 600;
   padding: 15px 30px;
@@ -48,21 +53,27 @@
   position: absolute;
   bottom: 0;
   padding: 15px 30px;
-  /* color: white; */
-}
-.up-foot img{
-  width: 30%;
 }
 .up-foot p{
   font-size: larger;
-  margin-top: -25px!important;
-  margin-bottom: 0!important;
+  text-align: left !important;
+  margin-bottom: 0px!important;
+}
+.up-foot .logo img{
+  width: 90px;
+}
+.up-foot .title{
+  margin-left: -20px!important;
+}
+.up-foot .title p{
+  margin-bottom: -10px!important;
 }
 .up-foot span{
   font-size: 14px;
 }
 .up-foot .design p{
-  margin-top: 0 !important;
+  text-align: center !important;
+  margin-top: -8px !important;
 }
 .up-foot .design p span{
   color: rgb(169, 169, 169);
@@ -82,12 +93,15 @@
   .up-foot p{
     font-size: 15px;
     margin-top: 0 !important;
+    text-align: center !important;
   }
   .up-foot .design p span{
     font-size: 13px;
   }
+  .logo{
+    display: none;
+  }
   .social ul{
-    text-align: center !important;
-    padding: 0.5rem 2rem  !important;
+    padding: 0rem  !important;
   }
 }
