@@ -3,7 +3,7 @@ import {Form, FormGroup, Input, Button } from 'reactstrap';
 
 function StayInTouch() {
   return (
-    <div className="container stayInTouch text-center d-flex align-items-center justify-content-center">
+    <div className="container stayInTouch-container text-center d-flex align-items-center justify-content-center">
         <div className="stayTouch">
             <div className="heading">
                 <h1>Stay In Touch</h1>
