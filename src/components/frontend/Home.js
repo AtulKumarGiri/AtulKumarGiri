@@ -1,4 +1,5 @@
 import React from 'react';
+import {showTouchAlert} from './layouts/Alerts';
 import {Button} from 'reactstrap';
 
 function Home() {
@@ -12,7 +13,7 @@ function Home() {
                 <div className="content">
                     <p className='my-4 mb-5'>I have built many web applications and websites using Laravel for clients in different industries, and my portfolio demonstrates my expertise in Laravel development and delivering top-notch projects that fulfill my clients’ requirements.</p>
 
-                    <Button>Learn More</Button>
+                    <Button onClick={showTouchAlert}>Get in Touch</Button>
                 </div>
             </div>
             <div className="img text-right">

@@ -13,7 +13,7 @@ function Services() {
             <div className="container d-md-flex align-items-center justify-content-between mr-auto d-sm-block">
                 <div className="service-box">
                     <div className="img-box">
-                        {/* <img src="./assets/images/website/web-development.gif"  alt="" /> */}
+                        <img src="./assets/images/website/web-development.gif"  alt="" />
                     </div>
                     <div className="content-heading">
                         <h2>Crafting Custom Web Apps</h2>
@@ -23,7 +23,7 @@ function Services() {
                 </div>
                 <div className="service-box">
                     <div className="img-box">
-                        {/* <img src="./assets/images/website/web-development.gif"  alt="" /> */}
+                        <img src="./assets/images/website/web-development.gif"  alt="" />
                     </div>
                     <div className="content-heading">
                         <h2>Building Powerful APIs with Laravel</h2>
@@ -33,17 +33,17 @@ function Services() {
                 </div>
                 <div className="service-box">
                     <div className="img-box">
-                        {/* <img src="./assets/images/website/web-development.gif"  alt="" /> */}
+                        <img src="./assets/images/website/web-development.gif"  alt="" />
                     </div>
                     <div className="content-heading">
                         <h2>Keep Your Website Running Smoothly</h2>
-                        <p>Need help maintaining your website? I've got you covered with my expertise in Laravel PHP development and my commitment to delivering top-notch results.</p>
+                        <p>I've got you covered with my expertise in Laravel PHP development and my commitment to delivering top-notch results.</p>
                         <Button>Read More</Button>
                     </div>
                 </div>
                 <div className="service-box">
                     <div className="img-box">
-                        {/* <img src="./assets/images/website/web-development.gif"  alt="" /> */}
+                        <img src="./assets/images/website/web-development.gif"  alt="" />
                     </div>
                     <div className="content-heading">
                         <h2>Experience the Unique UI/UX Design</h2>

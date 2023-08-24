@@ -1,4 +1,5 @@
 import React from 'react';
+import {showSuccessAlert} from './layouts/Alerts';
 import {Form, FormGroup, Input, Button } from 'reactstrap';
 
 function StayInTouch() {
@@ -14,7 +15,7 @@ function StayInTouch() {
                 <FormGroup>
                     <Input type="email" name="email" placeholder="Enter email address" />
                 </FormGroup>
-                <Button>Subscribe</Button>
+                <Button onClick={showSuccessAlert}>Subscribe</Button>
             </Form>
         </div>
     </div>

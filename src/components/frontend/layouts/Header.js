@@ -1,4 +1,5 @@
 import { React, useState, useLayoutEffect } from "react";
+import { downloadCV, showHireAlert } from "./Alerts";
 import {
 	Navbar,
 	NavItem,
@@ -52,19 +53,19 @@ function Header(props) {
                                 <NavLink href="#">Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">About</NavLink>
+                                <NavLink onClick={downloadCV} href="#">About</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">Portfolio</NavLink>
+                                <NavLink onClick={downloadCV} href="#">Portfolio</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">Contact</NavLink>
+                                <NavLink onClick={showHireAlert} href="#">Contact</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">Download Resume</NavLink>
+                                <NavLink onClick={downloadCV} href="#">Download Resume</NavLink>
                             </NavItem>
 					</Nav>
-                    <Button className="btn btn-success">Hire Me</Button>
+                    <Button onClick={showHireAlert} className="btn btn-success">Hire Me</Button>
 				</Collapse >
 			</Navbar>
 		</div >

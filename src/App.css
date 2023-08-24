@@ -111,13 +111,18 @@ h2{
   margin: auto;
 }
 .service-box .img-box{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   /* height: ; */
 }
-/* .service-box img{
+.service-box .content-heading h2{
+  margin: 25px 0px;
+  font-size: 30px;
+  /* font-weight: 100 !important; */
+}
+.service-box img{
   width: 100%;
-} */
+}
 
 .service-box .content-heading button{
   border: none;
