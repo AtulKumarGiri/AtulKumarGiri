@@ -1,5 +1,5 @@
 import React from 'react';
-import {showHireAlert} from './layouts/Alerts';
+import { showHireAlert } from './layouts/Alerts';
 
 import { Button } from 'reactstrap';
 
