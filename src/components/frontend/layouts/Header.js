@@ -11,6 +11,7 @@ import {
     Button
 } from 'reactstrap';
 import Cursor from "react-cursor-follow";
+import { Link } from "react-router-dom";
 
 
 const colors = [
@@ -45,24 +46,24 @@ function Header(props) {
             <Cursor color={"rgba(255, 0, 0, 0.6)"} duration={1} size={55} />
 
 			<Navbar light expand="md" >
-			    <NavbarBrand href="/"><img src="./assets/images/website/logo.png" alt="#logo" width={90} />  <span>Atul Kumar Giri</span></NavbarBrand>
+			    <NavbarBrand to="/"><img src="./assets/images/website/logo.png" alt="#logo" width={90} />  <span>Atul Kumar Giri</span></NavbarBrand>
 				<NavbarToggler onClick={() => { setIsOpen(!isOpen) }} />
 				<Collapse isOpen={isOpen} navbar>
 					<Nav className="me-auto mb-2 mb-lg-0" navbar>
                             <NavItem>
-                                <NavLink href="#">Home</NavLink>
+                                <Link to="/">Home</Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink onClick={downloadCV} href="#">About</NavLink>
+                                <Link to="/about">About</Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink onClick={downloadCV} href="#">Portfolio</NavLink>
+                                <Link to="/portfolio">Portfolio</Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink onClick={showHireAlert} href="#">Contact</NavLink>
+                                <Link to="/contact">Contact</Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink onClick={downloadCV} href="#">Download Resume</NavLink>
+                                <NavLink onClick={downloadCV} to="#">Download Resume</NavLink>
                             </NavItem>
 					</Nav>
                     <Button onClick={showHireAlert} className="btn btn-success">Hire Me</Button>

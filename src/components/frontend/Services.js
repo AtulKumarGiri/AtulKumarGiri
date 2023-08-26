@@ -2,6 +2,14 @@ import React from 'react';
 
 import { Button } from 'reactstrap';
 
+function truncateText(text, maxWords) {
+    const words = text.trim().split(/\s+/);
+    if (words.length > maxWords) {
+      return words.slice(0, maxWords).join(' ') + ' ...';
+    }
+    return text;
+  }
+
 function Services() {
   return (
     <div className="container services-container d-flex align-items-center justify-content-center">
@@ -17,7 +25,7 @@ function Services() {
                     </div>
                     <div className="content-heading">
                         <h2>Crafting Custom Web Apps</h2>
-                        <p>I'll build you a kick-ass custom web application using Laravel that's tailored to your unique business needs! Let's rock your online presence!</p>
+                        <p>{truncateText("I'll build you a kick-ass custom web application using Laravel that's tailored to your unique business needs! Let's rock your online presence!", 16)}</p>
                         <Button>Read More</Button>
                     </div>
                 </div>
@@ -27,7 +35,7 @@ function Services() {
                     </div>
                     <div className="content-heading">
                         <h2>Building Powerful APIs with Laravel</h2>
-                        <p>Hey there! I'm a Laravel PHP Developer who specializes in creating awesome APIs for your web applications - let's build something amazing together!</p>
+                        <p>{truncateText("Hey there! I'm a Laravel PHP Developer who specializes in creating awesome APIs for your web applications - let's build something amazing together!", 16)}</p>
                         <Button>Read More</Button>
                     </div>
                 </div>
@@ -37,7 +45,7 @@ function Services() {
                     </div>
                     <div className="content-heading">
                         <h2>Keep Your Website Running Smoothly</h2>
-                        <p>I've got you covered with my expertise in Laravel PHP development and my commitment to delivering top-notch results.</p>
+                        <p>{truncateText("I've got you covered with my expertise in Laravel PHP development and my commitment to delivering top-notch results.", 16)}</p>
                         <Button>Read More</Button>
                     </div>
                 </div>
@@ -47,7 +55,7 @@ function Services() {
                     </div>
                     <div className="content-heading">
                         <h2>Experience the Unique UI/UX Design</h2>
-                        <p>Welcome to a world where design meets functionality, where every click feels intuitive, and every interaction is a delight. Let's craft remarkable journeys together.</p>
+                        <p>{truncateText("Welcome to a world where design meets functionality, where every click feels intuitive, and every interaction is a delight. Let's craft remarkable journeys together.", 16)}</p>
                         <Button>Read More</Button>
                     </div>
                 </div>
