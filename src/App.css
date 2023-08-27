@@ -114,7 +114,7 @@ h2{
 }
 .service-box .content-heading h2{
   margin: 25px 0px;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 .service-box img{
   width: 100%;
@@ -127,7 +127,41 @@ h2{
   color: #770150;
 }
 
+/* CONTACT PAGE SECTION  */
+.contactPageContainer{
+  width: 100%;
+}
 
+.contactPageContainer .call, .contactPageContainer .email, .contactPageContainer .address{
+  border: 1px solid rgba(128, 128, 128, 0.218);
+  width: 33%;
+  border-radius: 5px;
+}
+
+.contactPageContainer .heading i{
+  font-size: 40px;
+}
+.contactPageContainer .heading h2{
+  font-size: 1.5rem;
+}
+.contactPageContainer .heading a h2, .contactPageContainer .address .heading h1{
+  color: black;
+  font-size: 20px;
+}
+
+.contactForm{
+  width: 100%;
+}
+.contact-form{
+  width: 100% !important;
+  box-shadow: 2px 2px 15px rgba(128, 128, 128, 0.218);
+  border-radius: 8px;
+}
+
+.contactForm .info{
+  width: 100% !important;
+
+}
 
 /* STAY IN TOUCH SECTION  */
 .heading h1{
@@ -143,7 +177,7 @@ h2{
   margin-bottom: 8%;
   background-color: grey;
 }
-.aboutContainer span{
+.info span{
   width: 70px;
   height: 2px;
   display: block;
@@ -200,7 +234,6 @@ h2{
 
 @media (max-width:460px) {
 
-
   /* NAVBAR SECTION  */
   .navbar-collapse{
     width: 100vw;
@@ -227,7 +260,7 @@ h2{
     margin-top: 8%;
     word-wrap: wrap;
   }
-  .info p, .heading p {
+  .info p, .heading p, .content-heading p, .stayInTouch-container .heading p  {
     font-size: 14px;
   }
   .info button {
@@ -260,6 +293,33 @@ h2{
     margin: 5% 0;
     padding: 15px 0px;
   }
+
+
+  /* CONTACT PAGE SECTION  */
+  .contactPageContainer .call, .contactPageContainer .email, .contactPageContainer .address{
+    width: 100%;
+    margin-top: 15px;
+  }
+  .contactPageContainer .info span{
+    margin: 0 auto;
+  }
+  .contactPageContainer .content-heading{
+    margin-bottom: 25px;
+  }
+  .contact-form{
+    padding: 3rem 0 !important;
+  }
+  .contactPageContainer .heading i{
+    font-size: 30px;
+  }
+  .contactPageContainer .heading h2{
+    font-size: 1.2rem;
+  }
+  .contactPageContainer .heading a h2, .contactPageContainer .address .heading h1{
+    color: black;
+    font-size: 16px;
+  }
+
 
 
   
