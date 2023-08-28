@@ -1,11 +1,10 @@
 import { React, useState, useLayoutEffect } from "react";
-import { downloadCV, showHireAlert } from "./Alerts";
+import { showHireAlert } from "./Alerts";
 import {
 	Navbar,
 	NavItem,
 	NavbarToggler,
 	Collapse,
-	NavLink,
 	Nav,
 	NavbarBrand,
     Button
@@ -56,15 +55,18 @@ function Header(props) {
                             <NavItem>
                                 <Link to="/about">About</Link>
                             </NavItem>
-                            <NavItem>
+                            {/* <NavItem>
                                 <Link to="/portfolio">Portfolio</Link>
-                            </NavItem>
+                            </NavItem> */}
                             <NavItem>
                                 <Link to="/contact">Contact</Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink onClick={downloadCV} to="#">Download Resume</NavLink>
+                                <Link to="/certification">Certification</Link>
                             </NavItem>
+                            {/* <NavItem>
+                                <NavLink onClick={downloadCV} to="#">Download Resume</NavLink>
+                            </NavItem> */}
 					</Nav>
                     <Button onClick={showHireAlert} className="btn btn-success">Hire Me</Button>
 				</Collapse >
