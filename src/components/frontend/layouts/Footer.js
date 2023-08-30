@@ -1,26 +1,31 @@
 import React from 'react';
 
-function Footer() {
+function Footer(props) {
+    let myStyle = {
+        color: props.mode === 'dark'?'white':'#212529',
+        backgroundColor: props.mode ==='dark'?'#212529':'white'
+    }
+
   return (
     <div> 
-        <footer className="footer bg-light ">
+        <footer className={`footer bg-${props.mode}`}>
             <div className="up-foot d-md-flex justify-content-between align-items-center d-sm-block">
                 <div className="logo text-center d-md-flex align-items-center d-sm-none">
                     <img src="./assets/images/website/logo.png" alt="" />
                     <div className="title">
-                        <p>Atul Kumar Giri </p> 
-                        <span> Website Developer and Competitive Coder </span>
+                        <p style={myStyle}>Atul Kumar Giri </p> 
+                        <span style={myStyle}> Website Developer and Competitive Coder </span>
                     </div>
                 </div>
 
                 <div className="copy text-center">
-                    <p>&copy; Copyright 2023 | Atul Kumar Giri </p>
+                    <p style={myStyle}>&copy; Copyright 2023 | Atul Kumar Giri </p>
                     <div className="design text-center">
-                        <p><span> Designed & Developed by Atul Kumar Giri </span></p>
+                        <p><span style={myStyle}> Designed & Developed by Atul Kumar Giri </span></p>
                     </div>
                 </div>
                 <div className="social text-center">
-                    <p className='mb-1'>Connect with me at</p>
+                    <p className='mb-1' style={myStyle}>Connect with me at</p>
                     <ul className='d-flex p-0 m-0'>
                         <li className='mx-1'><a href="mailto:atulgiri21dec@gmail.com" target="_blank" rel="noreferrer" className="btn btn-social-icon  btn-google"><i className="fa fa-google"></i></a></li>
                         <li className='mx-1'><a href="https://github.com/AtulKumarGiri" target="_blank" rel="noreferrer" className="btn btn-social-icon  btn-github"><i className="fa fa-github"></i></a></li>

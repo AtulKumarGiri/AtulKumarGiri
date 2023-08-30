@@ -1,12 +1,18 @@
 import React from "react";
 
-function AboutPage() {
+function AboutPage(props) {
+
+  let myStyle = {
+    color: props.mode === 'dark'?'white':'#101010',
+    backgroundColor: props.mode ==='dark'?'#101010':'white'
+  }
+
   return (
     // <div className="container"><h1>About Me</h1></div>
     <div className="container about-page-container d-flex align-items-center justify-content-center">
       <div className="aboutPageContainer text-center">
         <div className="heading">
-          <h1>About Me</h1>
+          <h1 style={myStyle}>About Me</h1>
           <span></span>
         </div>
         <div className="container d-md-flex align-items-start justify-content-start d-sm-block ">
@@ -15,11 +21,11 @@ function AboutPage() {
           </div>
           <div className="info px-3">
             <div className="content-heading ">
-              <h2>Designing With Passion While Exploring The World</h2>
+              <h2 style={myStyle}>Designing With Passion While Exploring The World</h2>
               <span></span>
             </div>
             <div className="content">
-              <p className="my-4 mb-5">
+              <p style={myStyle} className="my-4 mb-5">
                 Hey there! I’m a kick-ass Laravel PHP Developer with a ton of
                 experience under my belt. I’ve built all sorts of awesome web
                 applications and websites for clients from different industries.
@@ -30,7 +36,7 @@ function AboutPage() {
 
               {/* <Button onClick={showHireAlert}>Contact Me</Button> */}
               <div className="social text-left">
-                <p className="mb-1">Let's talk with me at</p>
+                <p style={myStyle} className="mb-1">Let's talk with me at</p>
                 <ul className="d-flex p-0 m-0">
                   <li className="mx-1">
                     <a
@@ -110,10 +116,10 @@ function AboutPage() {
         <div className="container d-md-flex align-items-start justify-content-start d-sm-block mt-5">
           <div className="info mt-5 p-md-3">
             <div className="content-heading px-2">
-              <h2>Qualification</h2>
+              <h2 style={myStyle}>Qualification</h2>
               <span className="mb-4"></span>
             </div>
-            <p>
+            <p style={myStyle}>
               Hello! I am a proud BCA (Bachelor of Computer Applications)
               graduate. I completed my BCA from Techno India Hooghly Cmapus,
               affiliated with MAKAUT (Maulana Abul Kalam Azad University of
@@ -133,10 +139,10 @@ function AboutPage() {
         <div className="container d-md-flex align-items-start justify-content-start d-sm-block mt-5">
           <div className="info mt-5 p-md-3">
             <div className="content-heading px-2">
-              <h2>Skills</h2>
+              <h2 style={myStyle}>Skills</h2>
               <span className="mb-4"></span>
             </div>
-            <p>
+            <p style={myStyle}>
               <b>UI/UX Designer [Figma]:</b>
               I have a strong foundation in UI/UX design, with proficiency in
               Figma, a popular design tool. I can effectively translate conceptual
@@ -147,7 +153,7 @@ function AboutPage() {
               iterating designs to enhance the overall user experience.
               <br />
               <br />
-              <b>Frontend Developer:</b>
+              {/* <b>Frontend Developer:</b>
               I excel in frontend development, utilizing HTML, CSS, and JavaScript
               to create responsive and dynamic web applications. I have experience
               working with frontend frameworks like React, Angular, or Vue.js to
@@ -156,8 +162,8 @@ function AboutPage() {
               experiences across devices. I'm well-versed in optimizing
               performance for faster loading times and smoother interactions.
               <br />
-              <br />
-              <b>PHP Laravel Developer:</b>
+              <br /> */}
+              {/* <b>PHP Laravel Developer:</b>
               With a strong command of PHP and the Laravel framework, I can
               proficiently develop feature-rich web applications. My expertise
               includes building RESTful APIs, designing and optimizing databases,
@@ -165,7 +171,7 @@ function AboutPage() {
               practices, maintain code quality, and ensure security measures are
               in place to deliver robust and scalable applications.
               <br />
-              <br />
+              <br /> */}
               <b>Competitive Coder (C++):</b>
               As a competitive coder, I have a deep understanding of algorithms
               and data structures. I'm skilled in C++, a high-performance
@@ -200,10 +206,10 @@ function AboutPage() {
         <div className="container d-md-flex align-items-start justify-content-start d-sm-block mt-5">
           <div className="info mt-5 p-md-3">
             <div className="content-heading px-2">
-              <h2>Work Experience</h2>
+              <h2 style={myStyle}>Work Experience</h2>
               <span className="mb-4"></span>
             </div>
-            <p>
+            <p style={myStyle}>
               <b> Freelance Web Developer:</b> As a freelance web developer, I
               undertook various projects for clients from diverse industries. My
               responsibilities included designing and developing responsive and

@@ -5,12 +5,13 @@ import Services from './Services';
 
 
 
-function Index() {
+function Index(props) {
+
   return (
     <>
-    <Home />
-    <About/>
-    <Services/>
+    <Home mode={props.mode}/>
+    <About mode={props.mode}/>
+    <Services mode={props.mode}/>
     </>
   )
 }

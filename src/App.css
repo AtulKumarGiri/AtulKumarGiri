@@ -22,7 +22,9 @@
 .navbar-collapse{
   flex-grow: 0.5!important;
 }
-
+label.form-check-label{
+  cursor: pointer;
+}
 .navbar-brand span{
   margin-left: -25px;
   font-size: 23px;
@@ -42,11 +44,33 @@
   color: #673657;
 }
 
-.navbar-collapse button{
-  background: #673657;
-  padding: 15px 30px;
+.navbar button.dropdown-toggle{
+  border: none;
+  background: none;
+  color: rgb(169, 169, 169);
+  padding: 0;
+  font-size: 18px;
+  margin-top: -5px;
+  margin-left: 8px;
   font-family: 'Bricolage Grotesque', sans-serif;
 }
+
+.navbar button.dropdown-toggle:hover{
+  background: none;
+  color: #770150;
+}
+
+.navbar .dropdown-menu{
+  padding: 0;
+}
+.navbar .btn-group button{
+  padding: 5px 0px;
+}
+/* .navbar-collapse button{
+  /* background: #673657;
+  padding: 15px 30px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+} */
 .nav-item button:hover{
   background: #770150;
   
@@ -56,6 +80,13 @@
   border: none !important;
 }
 
+.bg-light.navbar-collapse{
+  background-color: white !important;
+}
+
+.bg-dark.navbar-collapse{
+  background-color: #101010 !important;
+}
 /* HOME Section  */
 .info{
   width: 48% !important;
