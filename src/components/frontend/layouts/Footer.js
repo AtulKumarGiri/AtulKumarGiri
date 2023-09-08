@@ -2,8 +2,8 @@ import React from 'react';
 
 function Footer(props) {
     let myStyle = {
-        color: props.mode === 'dark'?'white':'#212529',
-        backgroundColor: props.mode ==='dark'?'#212529':'white'
+        color: props.mode === 'dark'?'light':'#212529',
+        backgroundColor: props.mode ==='dark'?'#212529':'light'
     }
 
   return (

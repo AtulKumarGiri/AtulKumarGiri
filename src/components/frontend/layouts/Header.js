@@ -1,17 +1,17 @@
 import { React, useState, useLayoutEffect } from "react";
-// import { showHireAlert, downloadCV } from "./Alerts";
+import { downloadCV } from "./Alerts";
 import {
 	Navbar,
 	NavItem,
-    // NavLink,
+    NavLink,
 	NavbarToggler,
 	Collapse,
 	Nav,
 	NavbarBrand,
-    // DropdownMenu,
-    // DropdownItem,
-    // DropdownToggle,
-    // ButtonDropdown,
+    DropdownMenu,
+    DropdownItem,
+    DropdownToggle,
+    ButtonDropdown,
     // Button
 } from 'reactstrap';
 import Cursor from "react-cursor-follow";
@@ -32,7 +32,7 @@ function Header(props) {
 
     const[isOpen, setIsOpen] = useState(false); //Humburger
     const[i, setI] = useState(0); //Cursor Color
-    // const[dropdownOpen, setOpen] = useState(false); //Dropdown Open or Closed
+    const[dropdownOpen, setOpen] = useState(false); //Dropdown Open or Closed
 
     useLayoutEffect(() => {
         setTimeout(() => {
@@ -68,7 +68,7 @@ function Header(props) {
                             <Link to="/contact">Contact</Link>
                         </NavItem>
 
-                        {/* <NavItem>
+                        <NavItem>
                             <ButtonDropdown toggle={() => { setOpen(!dropdownOpen) }} isOpen={dropdownOpen}>
                                 <DropdownToggle caret>
                                     More
@@ -96,7 +96,7 @@ function Header(props) {
                                     </DropdownItem>
                                 </DropdownMenu>
                             </ButtonDropdown>   
-                        </NavItem>                             */}
+                        </NavItem>                            
 					</Nav>
                     {/* <Button onClick={showHireAlert} className="btn btn-success">Hire Me</Button> */}
                     <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}  >
