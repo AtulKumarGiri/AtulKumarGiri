@@ -56,7 +56,7 @@ Welcome to my GitHub profile! I'm a passionate full-stack developer currently pu
 
 ## 📈 GitHub Stats
 
-![Atul's GitHub stats](https://github-readme-stats.vercel.app/api?username=atulgiri&show_icons=true&theme=tokyonight)
+![Atul's GitHub stats](https://github-readme-stats.vercel.app/api?username=AtulKumarGiri&show_icons=true&theme=tokyonight)
 
 ---
 
